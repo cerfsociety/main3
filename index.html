@@ -6,9 +6,12 @@
 <link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
 <link rel="stylesheet" href="./W3.CSS Template_files/w3-theme-black.css">
 <link rel="stylesheet" href="./W3.CSS Template_files/css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Playfair Display';}
 .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -20,8 +23,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  font: 400 15px/1.5 'Playfair Display';
+  color: #0C5963;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -38,6 +41,8 @@ body, html {
 
 
 </style>
+
+
 </head><body>
 
   
@@ -56,28 +61,36 @@ body, html {
   </div>
 </div>
 
+
+
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
+<div style="width:25%">
+  <h3 class="w3-bar-item">Menu</h3>
   <a class="w3-bar-item w3-button w3-hover-black" href="">Paper Submission</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="">Working Paper Series</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="">Conference</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="">Best Paper Award</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="">Events</a>
-</nav>
+</div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1>Cambridge Endowment for Research in Finance</h1>
+</div>
+
+
+
+
+
+
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main" style="margin-left:10px">
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Cambridge Endowment for Research in Finance</h1>
       <p>Over the past decades, financial markets have re-emerged as prime determinants of economic behaviour and performance.
 
         Factors driving this transformation include:
@@ -117,55 +130,6 @@ body, html {
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">1</a>
-      <a class="w3-button w3-hover-black" href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">2</a>
-      <a class="w3-button w3-hover-black" href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">3</a>
-      <a class="w3-button w3-hover-black" href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">4</a>
-      <a class="w3-button w3-hover-black" href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">5</a>
-      <a class="w3-button w3-hover-black" href="https://www.w3schools.com/w3css/tryw3css_templates_webpage.htm#">»</a>
-    </div>
-  </div>
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
-    </div>
-
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
-
-<!-- END MAIN -->
 </div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
 
 </body></html>
